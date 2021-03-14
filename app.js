@@ -1,17 +1,16 @@
 //selectors
-const todoInput = document.querySelector('.todo-input');
-const todoButton = document.querySelector('.todo-button');
-const todoList = document.querySelector('.todo-list');
+const todoInput = document.querySelector(".todo-input");
+const todoButton = document.querySelector(".todo-button");
+const todoList = document.querySelector(".todo-list");
 
 //event listeners
-todoButton.addEventListener('click', todo);
+todoButton.addEventListener('click', addTodo);
 
 
 //function
 function addTodo(event){
-
     //prevent event from submitting
-    event.preventDefault()
+    event.preventDefault();
 
     //todo div
     const todoDiv = document.createElement('div');
@@ -36,5 +35,5 @@ function addTodo(event){
     todoDiv.appendChild(trashButton);
 
     //append todo list
-    todoList.appendChild(todoDiv)
+    todoList.appendChild(todoDiv);
 }
