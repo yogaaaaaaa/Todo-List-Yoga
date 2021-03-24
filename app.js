@@ -6,6 +6,7 @@ const todoList = document.querySelector(".todo-list");
 //event listeners
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
+todoList.addEventListener("click", checkMark);
 
 //function
 function addTodo(event) {
@@ -47,10 +48,9 @@ function deleteCheck(e) {
   if (item.classList[0] === "trash-btn"){ 
     const todo = item.parentElement;
     // animation
-    todo.classList.add("fall");
-    todo.addEventListnener("transitionend", function(){
+   
         todo.remove();
-    });
+    
   }
 
   //check mark
