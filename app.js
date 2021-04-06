@@ -59,6 +59,7 @@ function deleteCheck(e) {
     todo.classList.toggle("completed");
   }
 }
+//hsdaohdshuio
 //masih masalah
 // bla bla bla
 //testingggggg
